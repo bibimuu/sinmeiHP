@@ -1,0 +1,15 @@
+.header {
+  height: 85vh;
+  background-size: cover;
+  background-position: top;
+  animation: header-bg 20s ease-in-out infinite;
+  backface-visibility: hidden;
+  background-image: url(../assets/床版工事.jpg), url(../assets/床版工事2.jpg),
+    url(../assets/床板2.jpg), url(../assets/鍛冶3.jpg);
+
+  &--wrapper {
+    height: 85vh;
+    background-color: rgb(116, 112, 112);
+    opacity: 0.5;
+  }
+}
