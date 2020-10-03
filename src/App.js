@@ -3,6 +3,8 @@ import "./css/App.css";
 import { Route, Switch, Redirect } from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import CopyRight from "./components/CopyRight";
 import Top from "./pages/Top";
 import About from "./pages/About";
 import Business from "./pages/business/Business";
@@ -27,6 +29,8 @@ function App() {
         <Route path="/works" exact component={Works} />
         <Redirect to="/top" />
       </Switch>
+      <Footer />
+      <CopyRight />
     </>
   );
 }

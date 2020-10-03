@@ -5,3 +5,16 @@
     clear: both;
   }
 }
+
+@mixin scale-animation {
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.1) translateY(-0.5rem);
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+  &:active {
+    transform: scale(1) translateY(0rem);
+    transition: all 0.3s;
+  }
+}

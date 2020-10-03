@@ -1,0 +1,26 @@
+.sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__logo--instagram {
+    height: 5.2rem;
+    margin: 0 1.5rem 3rem 0;
+    @include scale-animation;
+  }
+  &__logo--line {
+    height: 5rem;
+    margin: 0 0 3rem 1.5rem;
+    @include scale-animation;
+  }
+  &__logo--small-instagram {
+    height: 3.2rem;
+    margin: 0 1.5rem 3rem 0;
+    @include scale-animation;
+  }
+  &__logo--small-line {
+    height: 4rem;
+    margin: 0 0 3rem 1.5rem;
+    @include scale-animation;
+  }
+}

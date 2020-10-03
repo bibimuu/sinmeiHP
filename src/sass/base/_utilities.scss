@@ -3,7 +3,10 @@
 }
 
 .padding {
-  &--bottom {
+  &--large-bottom {
     padding-bottom: 10rem;
+  }
+  &--small-bottom {
+    padding-bottom: 3rem;
   }
 }

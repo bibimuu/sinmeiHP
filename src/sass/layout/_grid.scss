@@ -1,10 +1,6 @@
 .row {
   margin: 0 auto;
   @include clearfix;
-
-  &__last {
-    margin-bottom: $gutter-vertical;
-  }
 }
 
 .col-1-of-4 {

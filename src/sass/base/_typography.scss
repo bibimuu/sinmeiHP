@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.7;
-  color: $color-grey-dark;
+  color: $color-black;
 }
 
 .heading-secondary {
@@ -14,7 +14,7 @@ body {
   padding: 5rem;
 
   &--white {
-    color: white;
+    color: $color-white;
   }
 }
 
@@ -24,13 +24,14 @@ body {
   letter-spacing: 0.2rem;
 
   &--white {
-    color: white;
+    color: $color-white;
   }
 }
 
 .pg {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   &--white {
-    color: white;
+    color: $color-white;
   }
 }

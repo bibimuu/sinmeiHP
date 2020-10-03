@@ -1,5 +1,6 @@
 import React from "react";
 import WorkPhoto from "../components/WorkPhoto";
+import Inquiry from "../components/Inquiry";
 
 function Top() {
   return (
@@ -9,12 +10,12 @@ function Top() {
           <h2 className="heading-secondary heading-secondary--white text-center">
             代表メッセージ
           </h2>
-          <p className="pg pg--white text-center padding--bottom">
+          <p className="pg pg--white text-center padding--large-bottom">
             株式会社伸明工業は、建設現場における鉄骨建方や床版工事などを主にしている会社です。
             <br />
-            ホテルやマンション、店舗やショッピングモールなど建物施工を請け負っております。
+            ホテルやマンション、店舗やショッピングモールなど、建物施工を請け負っております。
             <br />
-            中でも床版工事、鍛冶工事などが主な業務になります。
+            中でも鉄骨建方、床版工事、鍛冶工事などを主な業務としております。
             <br />
             また、最近では金物製作など工場作業、現場寸法取りからの図面製作も承っております。
             <br />
@@ -25,7 +26,9 @@ function Top() {
           </p>
         </section>
         <section>
-          <h2 className="heading-secondary text-center">事業紹介</h2>
+          <h2 className="heading-secondary text-center" id="work-photo">
+            事業紹介
+          </h2>
           <div className="row">
             <div className="col-1-of-4">
               <WorkPhoto photoNumber="--1">床版工事</WorkPhoto>
@@ -48,7 +51,7 @@ function Top() {
               </WorkPhoto>
             </div>
           </div>
-          <div className="row row__last">
+          <div className="row">
             <div className="col-1-of-4">
               <WorkPhoto photoNumber="--5">
                 アンカーフレーム
@@ -66,6 +69,16 @@ function Top() {
               <WorkPhoto photoNumber="--8"></WorkPhoto>
             </div>
           </div>
+        </section>
+        <section>
+          <h2 className="heading-secondary text-center" id="inquiry">
+            お問合せ
+          </h2>
+          <Inquiry>
+            お仕事のご依頼、求人お問い合わせは下記よりお願い致します。
+            <br />
+            なお、ご急ぎの方はお電話でお問い合わせくださいますようお願いいたします。
+          </Inquiry>
         </section>
       </main>
     </>

@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777; }
+  color: #202020; }
 
 .heading-secondary {
   font-size: 2.5rem;
@@ -24,25 +24,29 @@ body {
   letter-spacing: 0.2rem;
   padding: 5rem; }
   .heading-secondary--white {
-    color: white; }
+    color: #fff; }
 
 .heading-tertiary {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.2rem; }
   .heading-tertiary--white {
-    color: white; }
+    color: #fff; }
 
 .pg {
-  font-size: 2rem; }
+  font-size: 1.5rem;
+  line-height: 3rem; }
   .pg--white {
-    color: white; }
+    color: #fff; }
 
 .text-center {
   text-align: center; }
 
-.padding--bottom {
+.padding--large-bottom {
   padding-bottom: 10rem; }
+
+.padding--small-bottom {
+  padding-bottom: 3rem; }
 
 .work-photo {
   background-position: center;
@@ -51,7 +55,11 @@ body {
   transition: all 1s; }
   .work-photo:hover {
     transform: scale(1.1);
-    transition: ease-in-out 1s; }
+    transition: all ease-in-out 1s;
+    opacity: 0.7; }
+  .work-photo:active {
+    transform: scale(1);
+    transition: all ease-in-out 1s; }
   .work-photo--1 {
     background-image: url(../assets/床版工事work.jpg); }
   .work-photo--2 {
@@ -69,14 +77,67 @@ body {
   .work-photo--8 {
     background-image: url(../assets/ムーwork.jpg); }
     .work-photo--8:hover {
-      transform: none; }
+      transform: none;
+      opacity: 1; }
   .work-photo--bg-black {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(32, 32, 32, 0.4);
     height: 25rem; }
   .work-photo__flex--center {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .work-photo__link:link, .work-photo__link:visited {
+    color: #fff;
+    text-decoration: none; }
+
+.sns {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sns__logo--instagram {
+    height: 5.2rem;
+    margin: 0 1.5rem 3rem 0;
+    transition: all 0.5s; }
+    .sns__logo--instagram:hover {
+      transform: scale(1.1) translateY(-0.5rem);
+      transition: all 0.5s;
+      backface-visibility: hidden; }
+    .sns__logo--instagram:active {
+      transform: scale(1) translateY(0rem);
+      transition: all 0.3s; }
+  .sns__logo--line {
+    height: 5rem;
+    margin: 0 0 3rem 1.5rem;
+    transition: all 0.5s; }
+    .sns__logo--line:hover {
+      transform: scale(1.1) translateY(-0.5rem);
+      transition: all 0.5s;
+      backface-visibility: hidden; }
+    .sns__logo--line:active {
+      transform: scale(1) translateY(0rem);
+      transition: all 0.3s; }
+  .sns__logo--small-instagram {
+    height: 3.2rem;
+    margin: 0 1.5rem 3rem 0;
+    transition: all 0.5s; }
+    .sns__logo--small-instagram:hover {
+      transform: scale(1.1) translateY(-0.5rem);
+      transition: all 0.5s;
+      backface-visibility: hidden; }
+    .sns__logo--small-instagram:active {
+      transform: scale(1) translateY(0rem);
+      transition: all 0.3s; }
+  .sns__logo--small-line {
+    height: 4rem;
+    margin: 0 0 3rem 1.5rem;
+    transition: all 0.5s; }
+    .sns__logo--small-line:hover {
+      transform: scale(1.1) translateY(-0.5rem);
+      transition: all 0.5s;
+      backface-visibility: hidden; }
+    .sns__logo--small-line:active {
+      transform: scale(1) translateY(0rem);
+      transition: all 0.3s; }
 
 .header {
   height: 85vh;
@@ -90,20 +151,48 @@ body {
     background-color: #747070;
     opacity: 0.5; }
 
+.footer {
+  background-color: #17afca;
+  color: #fff; }
+  .footer__list {
+    list-style: none;
+    padding: 5rem; }
+  .footer__item {
+    display: inline-block; }
+  .footer__link {
+    display: inline-block;
+    transition: all 0.5s; }
+    .footer__link:hover {
+      transform: scale(1.1) translateY(-0.5rem);
+      transition: all 0.5s;
+      backface-visibility: hidden; }
+    .footer__link:active {
+      transform: scale(1) translateY(0rem);
+      transition: all 0.3s; }
+    .footer__link:link, .footer__link:visited {
+      color: #fff;
+      text-decoration: none; }
+    .footer__link--span {
+      padding: 0 1rem; }
+
 .row {
   margin: 0 auto; }
   .row::after {
     content: "";
     display: table;
     clear: both; }
-  .row__last {
-    margin-bottom: 5rem; }
 
 .col-1-of-4 {
   width: calc(100% / 4);
   height: 25rem;
   float: left;
   overflow: hidden; }
+
+.copy-right {
+  background-color: #202020;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 1rem 0; }
 
 .message {
   background-color: #17afca; }

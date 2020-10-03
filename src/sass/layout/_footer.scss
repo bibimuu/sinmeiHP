@@ -1,0 +1,27 @@
+.footer {
+  background-color: $color-primary;
+  color: $color-white;
+
+  &__list {
+    list-style: none;
+    padding: 5rem;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    @include scale-animation;
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    &--span {
+      padding: 0 1rem;
+    }
+  }
+}
