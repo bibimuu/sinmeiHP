@@ -1,0 +1,9 @@
+.text-center {
+  text-align: center;
+}
+
+.padding {
+  &--bottom {
+    padding-bottom: 10rem;
+  }
+}

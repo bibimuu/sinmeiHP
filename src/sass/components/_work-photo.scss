@@ -1,0 +1,50 @@
+.work-photo {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
+  }
+
+  &--1 {
+    background-image: url(../assets/床版工事work.jpg);
+  }
+  &--2 {
+    background-image: url(../assets/鉄骨工事work.jpg);
+  }
+  &--3 {
+    background-image: url(../assets/鍛冶工事work.png);
+  }
+  &--4 {
+    background-image: url(../assets/工場製作work.jpg);
+  }
+  &--5 {
+    background-image: url(../assets/アンカーフレームwork.png);
+  }
+  &--6 {
+    background-image: url(../assets/図面作成work.png);
+  }
+  &--7 {
+    background-image: url(../assets/海外研修生work.jpg);
+  }
+  &--8 {
+    background-image: url(../assets/ムーwork.jpg);
+    &:hover {
+      transform: none;
+    }
+  }
+
+  &--bg-black {
+    background: rgba(#000000, 0.5);
+    height: 25rem;
+  }
+
+  &__flex--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,7 +1,36 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ W3", "メイリオ",
+    "ＭＳ Ｐゴシック", sans-serif;
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.7;
   color: $color-grey-dark;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding: 5rem;
+
+  &--white {
+    color: white;
+  }
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+
+  &--white {
+    color: white;
+  }
+}
+
+.pg {
+  font-size: 2rem;
+  &--white {
+    color: white;
+  }
 }

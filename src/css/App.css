@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @keyframes header-bg {
   10% {
-    background-image: url(../assets/床版工事.jpg); }
+    background-image: url(../assets/床版工事work.jpg); }
   30% {
     background-image: url(../assets/床版工事2.jpg); }
   50% {
@@ -9,14 +9,74 @@
   70% {
     background-image: url(../assets/床板2.jpg); }
   100% {
-    background-image: url(../assets/床版工事.jpg); } }
+    background-image: url(../assets/床版工事work.jpg); } }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ W3", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777; }
+
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding: 5rem; }
+  .heading-secondary--white {
+    color: white; }
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem; }
+  .heading-tertiary--white {
+    color: white; }
+
+.pg {
+  font-size: 2rem; }
+  .pg--white {
+    color: white; }
+
+.text-center {
+  text-align: center; }
+
+.padding--bottom {
+  padding-bottom: 10rem; }
+
+.work-photo {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  transition: all 1s; }
+  .work-photo:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 1s; }
+  .work-photo--1 {
+    background-image: url(../assets/床版工事work.jpg); }
+  .work-photo--2 {
+    background-image: url(../assets/鉄骨工事work.jpg); }
+  .work-photo--3 {
+    background-image: url(../assets/鍛冶工事work.png); }
+  .work-photo--4 {
+    background-image: url(../assets/工場製作work.jpg); }
+  .work-photo--5 {
+    background-image: url(../assets/アンカーフレームwork.png); }
+  .work-photo--6 {
+    background-image: url(../assets/図面作成work.png); }
+  .work-photo--7 {
+    background-image: url(../assets/海外研修生work.jpg); }
+  .work-photo--8 {
+    background-image: url(../assets/ムーwork.jpg); }
+    .work-photo--8:hover {
+      transform: none; }
+  .work-photo--bg-black {
+    background: rgba(0, 0, 0, 0.5);
+    height: 25rem; }
+  .work-photo__flex--center {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .header {
   height: 85vh;
@@ -24,8 +84,26 @@ body {
   background-position: top;
   animation: header-bg 20s ease-in-out infinite;
   backface-visibility: hidden;
-  background-image: url(../assets/床版工事.jpg), url(../assets/床版工事2.jpg), url(../assets/床板2.jpg), url(../assets/鍛冶3.jpg); }
-  .header--wrapper {
+  background-image: url(../assets/床版工事work.jpg), url(../assets/床版工事2.jpg), url(../assets/床板2.jpg), url(../assets/鍛冶3.jpg); }
+  .header__wrapper {
     height: 85vh;
     background-color: #747070;
     opacity: 0.5; }
+
+.row {
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row__last {
+    margin-bottom: 5rem; }
+
+.col-1-of-4 {
+  width: calc(100% / 4);
+  height: 25rem;
+  float: left;
+  overflow: hidden; }
+
+.message {
+  background-color: #17afca; }
