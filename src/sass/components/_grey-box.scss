@@ -1,0 +1,13 @@
+.grey-box {
+  width: 14rem;
+  background-color: $color-grey;
+  margin: 0 5rem 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: row;
+}

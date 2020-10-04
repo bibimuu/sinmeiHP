@@ -11,10 +11,25 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  padding: 5rem;
+  padding: 5rem 0;
 
   &--white {
     color: $color-white;
+  }
+}
+
+.heading-secondary--border {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding: 5rem 0;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $color-primary;
+    display: block;
   }
 }
 
@@ -25,6 +40,16 @@ body {
 
   &--white {
     color: $color-white;
+  }
+}
+
+.heading-quaternary {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  &--padding {
+    padding: 1rem;
   }
 }
 

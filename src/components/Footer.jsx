@@ -8,13 +8,13 @@ function Footer() {
       <footer className="footer">
         <ul class="footer__list text-center">
           <li class="footer__item">
-            <a href="#a" className="footer__link">
+            <a href="/top" className="footer__link">
               TOP
             </a>
             <span className="footer__link--span">|</span>
           </li>
           <li className="footer__item">
-            <a href="#a" className="footer__link">
+            <a href="/about" className="footer__link">
               会社概要
             </a>
             <span className="footer__link--span">|</span>
@@ -26,13 +26,13 @@ function Footer() {
             <span className="footer__link--span">|</span>
           </li>
           <li className="footer__item">
-            <a href="#a" className="footer__link">
+            <a href="/works" className="footer__link">
               実績
             </a>
             <span className="footer__link--span">|</span>
           </li>
           <li className="footer__item">
-            <a href="#a" className="footer__link">
+            <a href="/recruit" className="footer__link">
               求人募集
             </a>
             <span className="footer__link--span">|</span>
