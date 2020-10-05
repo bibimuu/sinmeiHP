@@ -172,6 +172,52 @@ body {
   display: flex;
   flex-direction: row; }
 
+.works-slider {
+  text-align: center;
+  height: 40rem;
+  display: inline-block;
+  width: 100%; }
+  .works-slider--1 {
+    background-image: url(../assets/芝浦3丁目ホテル.JPG);
+    background-size: cover;
+    width: 30%;
+    height: 100%;
+    margin: 0 auto; }
+  .works-slider--2 {
+    background-image: url(../assets/東海市ルートイン.JPG);
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; }
+  .works-slider--3 {
+    background-image: url(../assets/敦賀市市営駐車場.JPG);
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; }
+  .works-slider--4 {
+    background-image: url(../assets/敦賀市配管屋工場.jpg);
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; }
+  .works-slider--5 {
+    background-image: url(../assets/福井県敦賀市倉庫.JPG);
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; }
+  .works-slider--6 {
+    background-image: url(../assets/飛騨高山ホテル.JPG);
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    margin: 0 auto; }
+
+.slick-dots {
+  position: unset !important;
+  margin-bottom: 3rem !important; }
+
 .header {
   height: 85vh;
   background-size: cover;
@@ -230,5 +276,7 @@ body {
 .message {
   background-color: #17afca; }
 
-.about {
+.about,
+.recruit,
+.works {
   margin: 0 15rem; }

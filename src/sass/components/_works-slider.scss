@@ -1,0 +1,54 @@
+.works-slider {
+  text-align: center;
+  height: 40rem;
+  display: inline-block;
+  width: 100%;
+
+  &--1 {
+    background-image: url(../assets/芝浦3丁目ホテル.JPG);
+    background-size: cover;
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &--2 {
+    background-image: url(../assets/東海市ルートイン.JPG);
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &--3 {
+    background-image: url(../assets/敦賀市市営駐車場.JPG);
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &--4 {
+    background-image: url(../assets/敦賀市配管屋工場.jpg);
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &--5 {
+    background-image: url(../assets/福井県敦賀市倉庫.JPG);
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &--6 {
+    background-image: url(../assets/飛騨高山ホテル.JPG);
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.slick-dots {
+  position: unset !important;
+  margin-bottom: 3rem !important;
+}
