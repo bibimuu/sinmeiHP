@@ -6,8 +6,8 @@ function Footer() {
   return (
     <>
       <footer className="footer">
-        <ul class="footer__list text-center">
-          <li class="footer__item">
+        <ul className="footer__list text-center">
+          <li className="footer__item">
             <a href="/top" className="footer__link">
               TOP
             </a>
@@ -20,7 +20,7 @@ function Footer() {
             <span className="footer__link--span">|</span>
           </li>
           <li className="footer__item">
-            <a href="#work-photo" className="footer__link">
+            <a href="/top#work-photo" className="footer__link">
               事業紹介
             </a>
             <span className="footer__link--span">|</span>
@@ -38,7 +38,7 @@ function Footer() {
             <span className="footer__link--span">|</span>
           </li>
           <li className="footer__item">
-            <a href="#inquiry" className="footer__link">
+            <a href="/top#inquiry" className="footer__link">
               お問合せ
             </a>
           </li>

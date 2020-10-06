@@ -9,3 +9,13 @@
   float: left;
   overflow: hidden;
 }
+
+.col-1-of-2 {
+  width: calc((100% - #{$gutter-horizontal}) / 2);
+  height: 25rem;
+  float: left;
+  overflow: hidden;
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+  }
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import WorksSlider from "../components/WorksSlider";
+import Inquiry from "../components/Inquiry";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -26,6 +28,14 @@ export default class Works extends React.Component {
             <WorksSlider photoNumber="--5">福井県敦賀市倉庫</WorksSlider>
             <WorksSlider photoNumber="--6">飛騨高山ホテル</WorksSlider>
           </Slider>
+        </section>
+        <section className="about">
+          <h2 className="heading-secondary--border">お問合せ</h2>
+          <Inquiry>
+            お仕事のご依頼、求人お問い合わせは下記よりお願い致します。
+            <br />
+            なお、ご急ぎの方はお電話でお問い合わせくださいますようお願いいたします。
+          </Inquiry>
         </section>
       </>
     );

@@ -7,6 +7,21 @@ function Recruit() {
     <>
       <section className="recruit">
         <h2 className="heading-secondary--border">求人情報</h2>
+        <p className="pg text-center padding--medium-bottom">
+          株式会社伸明工業では、一緒に働く仲間を募集しております。
+          <br />
+          職人になりたい方、技術を磨きたい方、
+          <br />
+          他業界からの転職や未経験の方も丁寧に指導し、
+          <br />
+          当社での資格取得等スキルアップを目指すことが可能です。
+          <br />
+          学歴や経験は一切問いません。
+          <br />
+          もちろん業界経験者の方は優遇いたします。
+          <br />
+          どなたでもすぐに活躍可能ですので先ずはご連絡お待ちしております。
+        </p>
         <GreyBox title="勤務地">
           会社集合後、確現場により異なる（直行直帰可能）
         </GreyBox>

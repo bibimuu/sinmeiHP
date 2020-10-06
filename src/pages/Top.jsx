@@ -31,20 +31,24 @@ function Top() {
           </h2>
           <div className="row">
             <div className="col-1-of-4">
-              <WorkPhoto photoNumber="--1">床版工事</WorkPhoto>
+              <WorkPhoto photoNumber="--1" name="floor">
+                床版工事
+              </WorkPhoto>
             </div>
             <div className="col-1-of-4">
-              <WorkPhoto photoNumber="--2">鉄骨工事</WorkPhoto>
+              <WorkPhoto photoNumber="--2" name="steel">
+                鉄骨工事
+              </WorkPhoto>
             </div>
             <div className="col-1-of-4">
-              <WorkPhoto photoNumber="--3">
+              <WorkPhoto photoNumber="--3" name="blacksmith">
                 鍛冶工事
                 <br />
                 金物工事
               </WorkPhoto>
             </div>
             <div className="col-1-of-4">
-              <WorkPhoto photoNumber="--4">
+              <WorkPhoto photoNumber="--4" name="factory">
                 工場製作
                 <br />
                 金物製作
@@ -53,17 +57,21 @@ function Top() {
           </div>
           <div className="row">
             <div className="col-1-of-4">
-              <WorkPhoto photoNumber="--5">
+              <WorkPhoto photoNumber="--5" name="anchor">
                 アンカーフレーム
                 <br />
                 柱脚工事
               </WorkPhoto>
             </div>
             <div className="col-1-of-4">
-              <WorkPhoto photoNumber="--6">図面作成</WorkPhoto>
+              <WorkPhoto photoNumber="--6" name="drawing">
+                図面作成
+              </WorkPhoto>
             </div>
             <div className="col-1-of-4">
-              <WorkPhoto photoNumber="--7">海外研修生</WorkPhoto>
+              <WorkPhoto photoNumber="--7" name="trainee">
+                海外研修生
+              </WorkPhoto>
             </div>
             <div className="col-1-of-4">
               <WorkPhoto photoNumber="--8"></WorkPhoto>
