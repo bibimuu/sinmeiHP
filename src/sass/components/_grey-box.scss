@@ -1,5 +1,5 @@
 .grey-box {
-  width: 14rem;
+  width: 15%;
   background-color: $color-grey;
   margin: 0 5rem 2rem 0;
   display: flex;
@@ -10,4 +10,8 @@
 .info-wrapper {
   display: flex;
   flex-direction: row;
+}
+
+.content-box {
+  width: 70%;
 }

@@ -71,6 +71,9 @@ body {
 .pg {
   font-size: 1.5rem;
   line-height: 3rem;
+  @include respond(tab-port) {
+    // line-height: 4rem;
+  }
 
   &--white {
     color: $color-white;

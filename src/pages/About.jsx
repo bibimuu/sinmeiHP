@@ -5,7 +5,7 @@ import Inquiry from "../components/Inquiry";
 function About() {
   return (
     <>
-      <section className="about">
+      <section className="about  padding--small-top">
         <h2 className="heading-secondary--border">会社概要</h2>
         <GreyBox title="会社名">株式会社伸明工業</GreyBox>
         <GreyBox title="代表者">平松亜紀夫</GreyBox>
@@ -16,7 +16,7 @@ function About() {
         <GreyBox title="社員数">
           技術職5名、ベトナム実習生2名、事務員1名、協力会社約10社
         </GreyBox>
-        <GreyBox title="対応エリア">
+        <GreyBox title="対応地域">
           福井県を中心に北陸、東海地方、またお客様のご依頼があれば全国どこへでも行かせていただきます。
         </GreyBox>
       </section>

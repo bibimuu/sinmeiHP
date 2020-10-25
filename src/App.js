@@ -2,7 +2,7 @@ import React from "react";
 import "./css/App.css";
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CopyRight from "./components/CopyRight";
 import Top from "./pages/Top";
@@ -16,7 +16,6 @@ function App() {
   return (
     <>
       <Navigation />
-      <Header />
       <Switch>
         <Route path="/top" exact component={Top} />
         <Route path="/about" exact component={About} />

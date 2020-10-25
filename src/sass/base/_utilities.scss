@@ -13,6 +13,13 @@
   &--small-bottom {
     padding-bottom: 3rem;
   }
+  &--small-top {
+    padding-top: 3rem;
+
+    @include respond(tab-land) {
+      padding-top: 5rem;
+    }
+  }
 }
 
 .border {

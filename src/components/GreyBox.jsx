@@ -9,7 +9,7 @@ function GreyBox({ title, children }) {
             {title}
           </h3>
         </div>
-        <div className="">
+        <div className="content-box">
           <p className="pg padding">{children}</p>
         </div>
       </div>

@@ -1,11 +1,13 @@
 import React from "react";
 import WorkPhoto from "../components/WorkPhoto";
 import Inquiry from "../components/Inquiry";
+import Header from "../components/Header";
 
 function Top() {
   return (
     <>
       <main>
+        <Header />
         <section className="message">
           <h2 className="heading-secondary heading-secondary--white text-center">
             代表メッセージ

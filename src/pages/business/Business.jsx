@@ -25,7 +25,7 @@ const Business = () => {
   if (businessPages.floor === location.pathname) {
     return (
       <>
-        <section className="business">
+        <section className="business padding--small-top">
           <div className="border">
             <h2 className="heading-secondary heading-secondary--no-padding-bottom">
               床版工事
@@ -50,7 +50,7 @@ const Business = () => {
   if (businessPages.steel === location.pathname) {
     return (
       <>
-        <section className="business">
+        <section className="business padding--small-top">
           <div className="border">
             <h2 className="heading-secondary heading-secondary--no-padding-bottom">
               鉄骨工事
@@ -75,7 +75,7 @@ const Business = () => {
   if (businessPages.blacksmith === location.pathname) {
     return (
       <>
-        <section className="business">
+        <section className="business padding--small-top">
           <div className="border">
             <h2 className="heading-secondary heading-secondary--no-padding-bottom">
               鍛冶工事/金物工事
@@ -101,7 +101,7 @@ const Business = () => {
   if (businessPages.factory === location.pathname) {
     return (
       <>
-        <section className="business">
+        <section className="business padding--small-top">
           <div className="border">
             <h2 className="heading-secondary heading-secondary--no-padding-bottom">
               工場製作/金物製作
@@ -126,7 +126,7 @@ const Business = () => {
   if (businessPages.anchor === location.pathname) {
     return (
       <>
-        <section className="business">
+        <section className="business padding--small-top">
           <div className="border">
             <h2 className="heading-secondary heading-secondary--no-padding-bottom">
               アンカーフレーム/柱脚工事
@@ -151,7 +151,7 @@ const Business = () => {
   if (businessPages.drawing === location.pathname) {
     return (
       <>
-        <section className="business">
+        <section className="business padding--small-top">
           <div className="border">
             <h2 className="heading-secondary heading-secondary--no-padding-bottom">
               図面作成
@@ -176,7 +176,7 @@ const Business = () => {
   if (businessPages.trainee === location.pathname) {
     return (
       <>
-        <section className="business">
+        <section className="business padding--small-top">
           <div className="border">
             <h2 className="heading-secondary heading-secondary--no-padding-bottom">
               海外研修生

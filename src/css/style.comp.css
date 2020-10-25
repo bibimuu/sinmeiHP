@@ -93,6 +93,9 @@ body {
 .pg {
   font-size: 1.5rem;
   line-height: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .pg {
+      line-height: 4rem; } }
   .pg--white {
     color: #fff; }
   .pg__change-button {

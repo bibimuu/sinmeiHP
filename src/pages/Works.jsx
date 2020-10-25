@@ -18,7 +18,7 @@ export default class Works extends React.Component {
 
     return (
       <>
-        <section className="works">
+        <section className="works padding--small-top">
           <h2 className="heading-secondary--border">実績</h2>
           <Slider {...settings} className="works-slider__box">
             <WorksSlider photoNumber="--1">芝浦三丁目ホテル</WorksSlider>
