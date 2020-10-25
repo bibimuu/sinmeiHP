@@ -7,21 +7,132 @@
   width: 100%;
   z-index: 1000;
 
+  @include respond(tab-port) {
+    height: 100%;
+    justify-content: center;
+    transition: all 0.3s;
+    &--none {
+      visibility: hidden;
+      opacity: 0;
+    }
+    &--show {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
   &__item {
     list-style: none;
     @include scale-animation;
+    padding: 1rem 3rem;
+    display: flex;
+
+    @include respond(tab-port) {
+      padding: 1.5rem 0rem;
+      flex-direction: column;
+    }
   }
 
   &__list {
-    display: flex;
     font-family: "游教科書体", "YuKyokasho";
     font-size: 2rem;
+    display: flex;
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
-  &__link {
-    padding: 1rem 3rem;
-    @include respond(phone) {
-      padding: 1rem;
+  &__logo {
+    @include respond(tab-port) {
+      display: none;
     }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background-color: $color-white;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    text-align: center;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+  }
+
+  //icon
+  &__icon {
+    position: relative;
+    margin-top: 3.3rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-primary;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+
+    &::after {
+      top: 1rem;
+    }
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+  }
+}
+
+.menu {
+  display: none;
+  @include respond(tab-port) {
+    display: block;
   }
 }

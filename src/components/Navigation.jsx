@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import Menu from "./Menu";
 
 function Navigation() {
+  const [show, setShow] = useState("navigation--none");
+
   return (
     <>
-      <div className="navigation">
-        <a className="link" href="/top">
-          <div className="navigation__logo">
+      <Menu setShow={setShow} show={show} />
+      <div className={`${show} navigation`}>
+        <div className="navigation__logo">
+          <a className="link" href="/top">
             <h1 className="heading-primary">伸明工業</h1>
-          </div>
-        </a>
+          </a>
+        </div>
+
         <div>
           <ul className="navigation__list text-center">
             <li className="navigation__item">

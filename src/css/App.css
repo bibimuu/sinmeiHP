@@ -325,9 +325,22 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1000; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation {
+      height: 100%;
+      justify-content: center;
+      transition: all 0.3s; }
+      .navigation--none {
+        visibility: hidden;
+        opacity: 0; }
+      .navigation--show {
+        visibility: visible;
+        opacity: 1; } }
   .navigation__item {
     list-style: none;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    padding: 1rem 3rem;
+    display: flex; }
     .navigation__item:hover {
       transform: scale(1.1) translateY(-0.5rem);
       transition: all 0.3s;
@@ -335,15 +348,79 @@ body {
     .navigation__item:active {
       transform: scale(1) translateY(0rem);
       transition: all 0.3s; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__item {
+        padding: 1.5rem 0rem;
+        flex-direction: column; } }
   .navigation__list {
-    display: flex;
     font-family: "游教科書体", "YuKyokasho";
-    font-size: 2rem; }
-  .navigation__link {
-    padding: 1rem 3rem; }
-    @media only screen and (max-width: 37.5em) {
-      .navigation__link {
-        padding: 1rem; } }
+    font-size: 2rem;
+    display: flex; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__list {
+        flex-direction: column;
+        justify-content: center; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__logo {
+      display: none; } }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__button {
+    background-color: #fff;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(32, 32, 32, 0.1);
+    text-align: center;
+    cursor: pointer; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__button {
+        top: 4rem;
+        right: 4rem; } }
+  .navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
+  .navigation__icon {
+    position: relative;
+    margin-top: 3.3rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 3rem;
+      height: 2px;
+      background-color: #17afca;
+      display: inline-block;
+      transition: all 0.2s; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0; }
+    .navigation__icon::before {
+      top: -1rem; }
+    .navigation__icon::after {
+      top: 1rem; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    transform: rotate(135deg);
+    top: 0; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    transform: rotate(-135deg);
+    top: 0; }
+
+.menu {
+  display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .menu {
+      display: block; } }
 
 .header {
   height: 85vh;
