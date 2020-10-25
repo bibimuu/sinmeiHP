@@ -93,6 +93,9 @@ body {
 .pg {
   font-size: 1.5rem;
   line-height: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .pg {
+      line-height: 4rem; } }
   .pg--white {
     color: #fff; }
   .pg__change-button {
@@ -234,6 +237,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .grey-box {
+      width: 20%; } }
 
 .info-wrapper {
   display: flex;
@@ -374,7 +380,7 @@ body {
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba(32, 32, 32, 0.1);
+    box-shadow: 0 1rem 3rem rgba(32, 32, 32, 0.3);
     text-align: center;
     cursor: pointer; }
     @media only screen and (max-width: 56.25em) {
@@ -487,6 +493,9 @@ body {
 
 .message {
   background-color: #17afca; }
+  @media only screen and (max-width: 37.5em) {
+    .message {
+      padding: 0 3rem; } }
 
 .about,
 .recruit,
@@ -498,4 +507,5 @@ body {
     .recruit,
     .works,
     .business {
-      margin: 0 1rem; } }
+      padding: 0 3rem;
+      margin: 0 0; } }
