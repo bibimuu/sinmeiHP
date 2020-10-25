@@ -9,7 +9,6 @@
 
   &__item {
     list-style: none;
-    padding: 1rem 3rem;
     @include scale-animation;
   }
 
@@ -17,5 +16,12 @@
     display: flex;
     font-family: "游教科書体", "YuKyokasho";
     font-size: 2rem;
+  }
+
+  &__link {
+    padding: 1rem 3rem;
+    @include respond(phone) {
+      padding: 1rem;
+    }
   }
 }
