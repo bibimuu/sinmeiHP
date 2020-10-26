@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba($color-grey, 0.9);
+  background-color: rgba($color-grey, 0.95);
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -11,6 +11,7 @@
     height: 100%;
     justify-content: center;
     transition: all 0.3s;
+    align-items: unset;
     &--none {
       visibility: hidden;
       opacity: 0;
@@ -40,6 +41,7 @@
     @include respond(tab-port) {
       flex-direction: column;
       justify-content: center;
+      margin: 15rem 0 0 0;
     }
   }
 

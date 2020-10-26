@@ -12,7 +12,7 @@ function Top() {
           <h2 className="heading-secondary heading-secondary--white text-center">
             代表メッセージ
           </h2>
-          <p className="pg pg--white text-center padding--large-bottom">
+          <p className="pg pg--white text-left--phone text-center padding--large-bottom">
             株式会社伸明工業は、建設現場における鉄骨建方や床版工事などを主にしている会社です。
             <br />
             ホテルやマンション、店舗やショッピングモールなど、建物施工を請け負っております。
@@ -76,7 +76,11 @@ function Top() {
               </WorkPhoto>
             </div>
             <div className="col-1-of-4">
-              <WorkPhoto photoNumber="--8"></WorkPhoto>
+              <a href="#" className="work-photo__link disabled">
+                <div className="work-photo work-photo--8">
+                  <div className="work-photo--bg-black work-photo__flex--center"></div>
+                </div>
+              </a>
             </div>
           </div>
         </section>

@@ -31,7 +31,7 @@ function Recruit() {
       </section>
       <section className="recruit">
         <h2 className="heading-secondary--border">採用メッセージ</h2>
-        <p className="pg text-center">
+        <p className="pg text-center text-left--phone">
           株式会社伸明工業では、一緒に働く仲間を募集しております。
           <br />
           職人になりたい方、技術を磨きたい方、

@@ -22,7 +22,7 @@ function About() {
       </section>
       <section className="about">
         <h2 className="heading-secondary--border">代表メッセージ</h2>
-        <p className="pg text-center">
+        <p className="pg text-center text-left--phone">
           株式会社伸明工業は、建設現場における鉄骨建方や床版工事などを主にしている会社です。
           <br />
           ホテルやマンション、店舗やショッピングモールなど、建物施工を請け負っております。

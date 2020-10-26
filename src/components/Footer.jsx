@@ -63,8 +63,8 @@ function Footer() {
               alt="instagram"
             />
           </a>
-          <a href="#sss">
-            <img className="sns__logo--small-line" src={line} alt="instagram" />
+          <a href="https://lin.ee/8CVPenK">
+            <img className="sns__logo--small-line" src={line} alt="line" />
           </a>
         </div>
       </footer>
