@@ -69,10 +69,11 @@ body {
 }
 
 .pg {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.8rem;
+  line-height: 3.5rem;
   @include respond(tab-port) {
     line-height: 3.5rem;
+    font-size: 2rem;
   }
 
   &--white {
