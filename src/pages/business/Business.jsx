@@ -1,25 +1,23 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { businessPages } from "./businessPages";
+import WorksSlider from "../../components/WorksSlider";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import BusinessPhoto from "../../components/BusinessPhoto";
 import Inquiry from "../../components/Inquiry";
-import floorPic1 from "../../assets/床板.jpg";
-import floorPic2 from "../../assets/床板2.jpg";
-import steelPic1 from "../../assets/鉄骨１.jpg";
-import steelPic2 from "../../assets/鉄骨２.jpg";
-import blacksmithPic1 from "../../assets/鍛冶3.jpg";
-import blacksmithPic2 from "../../assets/鍛冶５.jpg";
-import factoryPic1 from "../../assets/工場製作work.jpg";
-import factoryPic2 from "../../assets/工場製作４.jpg";
-import anchorPic1 from "../../assets/アンカーフレーム1.jpg";
-import anchorPic2 from "../../assets/アンカーフレーム2.jpg";
-import drawingPic1 from "../../assets/図面作成1.jpg";
-import drawingPic2 from "../../assets/図面作成2.jpg";
-import traineePic1 from "../../assets/海外研修生1.jpg";
-import traineePic2 from "../../assets/海外研修生2.jpg";
 
 const Business = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   const location = useLocation();
 
   if (businessPages.floor === location.pathname) {
@@ -34,7 +32,15 @@ const Business = () => {
               <p className="pg pg__change-button">ほかの事業を見る</p>
             </a>
           </div>
-          <BusinessPhoto photo1={floorPic1} photo2={floorPic2} />
+          <Slider {...settings} className="works-slider__box">
+            <WorksSlider photoNumber="--floor1"></WorksSlider>
+            <WorksSlider photoNumber="--floor2"></WorksSlider>
+            <WorksSlider photoNumber="--floor3"></WorksSlider>
+            <WorksSlider photoNumber="--floor4"></WorksSlider>
+            <WorksSlider photoNumber="--floor5"></WorksSlider>
+            <WorksSlider photoNumber="--floor6"></WorksSlider>
+            <WorksSlider photoNumber="--floor7"></WorksSlider>
+          </Slider>
         </section>
         <section className="business">
           <h2 className="heading-secondary--border">お問合せ</h2>
@@ -59,7 +65,15 @@ const Business = () => {
               <p className="pg pg__change-button">ほかの事業を見る</p>
             </a>
           </div>
-          <BusinessPhoto photo1={steelPic1} photo2={steelPic2} />
+          <Slider {...settings} className="works-slider__box">
+            <WorksSlider photoNumber="--steel1"></WorksSlider>
+            <WorksSlider photoNumber="--steel2"></WorksSlider>
+            <WorksSlider photoNumber="--steel3"></WorksSlider>
+            <WorksSlider photoNumber="--steel4"></WorksSlider>
+            <WorksSlider photoNumber="--steel5"></WorksSlider>
+            <WorksSlider photoNumber="--steel6"></WorksSlider>
+            <WorksSlider photoNumber="--steel7"></WorksSlider>
+          </Slider>
         </section>
         <section className="business">
           <h2 className="heading-secondary--border">お問合せ</h2>
@@ -84,8 +98,15 @@ const Business = () => {
               <p className="pg pg__change-button">ほかの事業を見る</p>
             </a>
           </div>
-
-          <BusinessPhoto photo1={blacksmithPic1} photo2={blacksmithPic2} />
+          <Slider {...settings} className="works-slider__box">
+            <WorksSlider photoNumber="--blacksmith1"></WorksSlider>
+            <WorksSlider photoNumber="--blacksmith2"></WorksSlider>
+            <WorksSlider photoNumber="--blacksmith3"></WorksSlider>
+            <WorksSlider photoNumber="--blacksmith4"></WorksSlider>
+            <WorksSlider photoNumber="--blacksmith5"></WorksSlider>
+            <WorksSlider photoNumber="--blacksmith6"></WorksSlider>
+            <WorksSlider photoNumber="--blacksmith7"></WorksSlider>
+          </Slider>
         </section>
         <section className="business">
           <h2 className="heading-secondary--border">お問合せ</h2>
@@ -110,7 +131,15 @@ const Business = () => {
               <p className="pg pg__change-button">ほかの事業を見る</p>
             </a>
           </div>
-          <BusinessPhoto photo1={factoryPic1} photo2={factoryPic2} />
+          <Slider {...settings} className="works-slider__box">
+            <WorksSlider photoNumber="--factory1"></WorksSlider>
+            <WorksSlider photoNumber="--factory2"></WorksSlider>
+            <WorksSlider photoNumber="--factory3"></WorksSlider>
+            <WorksSlider photoNumber="--factory4"></WorksSlider>
+            <WorksSlider photoNumber="--factory5"></WorksSlider>
+            <WorksSlider photoNumber="--factory6"></WorksSlider>
+            <WorksSlider photoNumber="--factory7"></WorksSlider>
+          </Slider>
         </section>
         <section className="business">
           <h2 className="heading-secondary--border">お問合せ</h2>
@@ -135,7 +164,13 @@ const Business = () => {
               <p className="pg pg__change-button">ほかの事業を見る</p>
             </a>
           </div>
-          <BusinessPhoto photo1={anchorPic1} photo2={anchorPic2} />
+          <Slider {...settings} className="works-slider__box">
+            <WorksSlider photoNumber="--anchor1"></WorksSlider>
+            <WorksSlider photoNumber="--anchor2"></WorksSlider>
+            <WorksSlider photoNumber="--anchor3"></WorksSlider>
+            <WorksSlider photoNumber="--anchor4"></WorksSlider>
+            <WorksSlider photoNumber="--anchor5"></WorksSlider>
+          </Slider>
         </section>
         <section className="business">
           <h2 className="heading-secondary--border">お問合せ</h2>
@@ -160,7 +195,15 @@ const Business = () => {
               <p className="pg pg__change-button">ほかの事業を見る</p>
             </a>
           </div>
-          <BusinessPhoto photo1={drawingPic1} photo2={drawingPic2} />
+          <Slider {...settings} className="works-slider__box">
+            <WorksSlider photoNumber="--drawing1"></WorksSlider>
+            <WorksSlider photoNumber="--drawing2"></WorksSlider>
+            <WorksSlider photoNumber="--drawing3"></WorksSlider>
+            <WorksSlider photoNumber="--drawing4"></WorksSlider>
+            <WorksSlider photoNumber="--drawing5"></WorksSlider>
+            <WorksSlider photoNumber="--drawing6"></WorksSlider>
+            <WorksSlider photoNumber="--drawing7"></WorksSlider>
+          </Slider>
         </section>
         <section className="business">
           <h2 className="heading-secondary--border">お問合せ</h2>
@@ -185,7 +228,15 @@ const Business = () => {
               <p className="pg pg__change-button">ほかの事業を見る</p>
             </a>
           </div>
-          <BusinessPhoto photo1={traineePic1} photo2={traineePic2} />
+          <Slider {...settings} className="works-slider__box">
+            <WorksSlider photoNumber="--trainee3"></WorksSlider>
+            <WorksSlider photoNumber="--trainee2"></WorksSlider>
+            <WorksSlider photoNumber="--trainee7"></WorksSlider>
+            <WorksSlider photoNumber="--trainee4"></WorksSlider>
+            <WorksSlider photoNumber="--trainee5"></WorksSlider>
+            <WorksSlider photoNumber="--trainee6"></WorksSlider>
+            <WorksSlider photoNumber="--trainee1"></WorksSlider>
+          </Slider>
         </section>
         <section className="business">
           <h2 className="heading-secondary--border">お問合せ</h2>

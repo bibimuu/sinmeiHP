@@ -5,12 +5,31 @@
   animation: header-bg 20s ease-in-out infinite;
   backface-visibility: hidden;
   background-image: url(../assets/床版工事work.jpg),
-    url(../assets/床版工事2.jpg), url(../assets/床板2.jpg),
-    url(../assets/鍛冶3.jpg);
+    url(../assets/床版工事2.jpg), url(../assets/床版2.jpg),
+    url(../assets/鍛冶1.jpg);
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+  }
+
+  @include respond(phone) {
+    height: 50vh;
+    &__logo {
+      top: 25%;
+      transform: translate(-50%, -50%);
+      color: $color-white;
+    }
+  }
 
   &__wrapper {
     height: 85vh;
-    background-color: rgb(116, 112, 112);
-    opacity: 0.5;
+    background-color: rgba(116, 112, 112, 0.5);
+    @include respond(phone) {
+      height: 50vh;
+    }
   }
 }
