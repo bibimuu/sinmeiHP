@@ -1,3 +1,6 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .header {
   height: 85vh;
   background-size: cover;
@@ -13,22 +16,22 @@
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
-    color: $color-white;
+    color: variables.$color-white;
   }
 
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     height: 50vh;
     &__logo {
       top: 25%;
       transform: translate(-50%, -50%);
-      color: $color-white;
+      color: variables.$color-white;
     }
   }
 
   &__wrapper {
     height: 85vh;
     background-color: rgba(116, 112, 112, 0.5);
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       height: 50vh;
     }
   }

@@ -1,6 +1,9 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .message {
-  background-color: $color-primary;
-  @include respond(phone) {
+  background-color: variables.$color-primary;
+  @include mixins.respond(phone) {
     padding: 0 3rem;
   }
 }

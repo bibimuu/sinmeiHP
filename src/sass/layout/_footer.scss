@@ -1,6 +1,9 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .footer {
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: variables.$color-primary;
+  color: variables.$color-white;
 
   &__list {
     list-style: none;
@@ -13,10 +16,10 @@
 
   &__link {
     display: inline-block;
-    @include scale-animation;
+    @include mixins.scale-animation;
     &:link,
     &:visited {
-      color: $color-white;
+      color: variables.$color-white;
       text-decoration: none;
     }
 

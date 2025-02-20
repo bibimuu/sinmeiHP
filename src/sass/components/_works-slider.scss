@@ -1,3 +1,5 @@
+@use "../abstracts/mixins";
+
 .works-slider {
   text-align: center;
   height: 40rem;
@@ -6,219 +8,219 @@
 
   &--1 {
     background-image: url(../assets/芝浦3丁目ホテル.JPG);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--2 {
     background-image: url(../assets/東海市ルートイン.JPG);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--3 {
     background-image: url(../assets/敦賀市市営駐車場.JPG);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--4 {
     background-image: url(../assets/敦賀市配管屋工場.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--5 {
     background-image: url(../assets/福井県敦賀市倉庫.JPG);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--6 {
     background-image: url(../assets/飛騨高山ホテル.JPG);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--drawing1 {
     background-image: url(../assets/図面作成1.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--drawing1 {
     background-image: url(../assets/図面作成1.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--drawing2 {
     background-image: url(../assets/図面作成2.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--drawing3 {
     background-image: url(../assets/図面作成3.png);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--drawing4 {
     background-image: url(../assets/図面作成4.png);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--drawing5 {
     background-image: url(../assets/図面作成5.png);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--drawing6 {
     background-image: url(../assets/図面作成6.png);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--drawing7 {
     background-image: url(../assets/図面作成7.png);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--blacksmith1 {
     background-image: url(../assets/鍛冶1.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--blacksmith2 {
     background-image: url(../assets/鍛冶2.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--blacksmith3 {
     background-image: url(../assets/鍛冶3.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--blacksmith4 {
     background-image: url(../assets/鍛冶4.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--blacksmith5 {
     background-image: url(../assets/鍛冶5.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--blacksmith6 {
     background-image: url(../assets/鍛冶6.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--blacksmith7 {
     background-image: url(../assets/鍛冶7.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--floor1 {
     background-image: url(../assets/床版.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--floor2 {
     background-image: url(../assets/床版2.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--floor3 {
     background-image: url(../assets/床版3.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--floor4 {
     background-image: url(../assets/床版4.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--floor5 {
     background-image: url(../assets/床版5.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--floor6 {
     background-image: url(../assets/床版6.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--floor7 {
     background-image: url(../assets/床版7.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--anchor1 {
     background-image: url(../assets/アンカーフレーム1.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--anchor2 {
     background-image: url(../assets/アンカーフレーム2.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--anchor3 {
     background-image: url(../assets/アンカーフレーム3.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--anchor4 {
     background-image: url(../assets/アンカーフレーム4.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--anchor5 {
     background-image: url(../assets/アンカーフレーム5.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--factory1 {
     background-image: url(../assets/工場製作1.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--factory2 {
     background-image: url(../assets/工場製作2.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--factory3 {
     background-image: url(../assets/工場製作3.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--factory4 {
     background-image: url(../assets/工場製作4.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--factory5 {
     background-image: url(../assets/工場製作5.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--factory6 {
     background-image: url(../assets/工場製作6.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--factory7 {
     background-image: url(../assets/工場製作work.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--steel1 {
     background-image: url(../assets/鉄骨1.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--steel2 {
     background-image: url(../assets/鉄骨2.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--steel3 {
     background-image: url(../assets/鉄骨3.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--steel4 {
     background-image: url(../assets/鉄骨4.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--steel5 {
     background-image: url(../assets/鉄骨5.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--steel6 {
     background-image: url(../assets/鉄骨6.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--steel7 {
     background-image: url(../assets/鉄骨7.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--trainee1 {
     background-image: url(../assets/海外研修生1.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--trainee2 {
     background-image: url(../assets/海外研修生2.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--trainee3 {
     background-image: url(../assets/海外研修生3.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--trainee4 {
     background-image: url(../assets/海外研修生4.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--trainee5 {
     background-image: url(../assets/海外研修生5.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--trainee6 {
     background-image: url(../assets/海外研修生6.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
   &--trainee7 {
     background-image: url(../assets/海外研修生7.jpg);
-    @include works-slider-setting;
+    @include mixins.works-slider-setting;
   }
 }
 

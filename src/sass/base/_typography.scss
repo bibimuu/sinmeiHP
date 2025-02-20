@@ -1,10 +1,13 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 body {
   font-family: "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ W3", "メイリオ",
     "ＭＳ Ｐゴシック", sans-serif;
   font-weight: 400;
-  font-size: $default-font-size;
+  font-size: variables.$default-font-size;
   line-height: 1.7;
-  color: $color-black;
+  color: variables.$color-black;
 }
 
 .heading-primary {
@@ -26,7 +29,7 @@ body {
   }
 
   &--white {
-    color: $color-white;
+    color: variables.$color-white;
   }
 
   &--border {
@@ -39,7 +42,7 @@ body {
       content: "";
       width: 100%;
       height: 2px;
-      background-color: $color-primary;
+      background-color: variables.$color-primary;
       display: block;
     }
   }
@@ -51,7 +54,7 @@ body {
   letter-spacing: 0.2rem;
 
   &--white {
-    color: $color-white;
+    color: variables.$color-white;
   }
 }
 
@@ -64,32 +67,32 @@ body {
     padding: 1rem;
   }
   &--white {
-    color: $color-white;
+    color: variables.$color-white;
   }
 }
 
 .pg {
   font-size: 1.8rem;
   line-height: 3.5rem;
-  @include respond(tab-port) {
+  @include mixins.respond(tab-port) {
     line-height: 3.5rem;
     font-size: 2rem;
   }
 
   &--white {
-    color: $color-white;
+    color: variables.$color-white;
   }
   &__change-button {
     float: left;
     transition: 0.2s;
     &:hover {
-      color: $color-primary;
+      color: variables.$color-primary;
       transform: translateX(1rem);
       transition: 0.2s;
     }
 
     &:active {
-      color: $color-primary;
+      color: variables.$color-primary;
       transform: translateX(0);
       transition: 0.2s;
     }

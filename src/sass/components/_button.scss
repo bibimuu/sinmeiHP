@@ -1,18 +1,21 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .button {
   &__box {
-    background-color: $color-primary;
+    background-color: variables.$color-primary;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1.5rem 3rem;
-    @include scale-animation;
+    @include mixins.scale-animation;
   }
 
   &__link {
     padding: 1.5rem 3rem;
     &:link,
     &:visited {
-      color: $color-white;
+      color: variables.$color-white;
       text-decoration: none;
     }
   }

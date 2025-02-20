@@ -1,23 +1,23 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/variables";
 
-@import "base/base";
-@import "base/animations";
-@import "base/typography";
-@import "base/utilities";
+@use "base/base";
+@use "base/animations";
+@use "base/typography";
+@use "base/utilities";
 
-@import "components/work-photo";
-@import "components/sns";
-@import "components/grey-box";
-@import "components/works-slider";
-@import "components/business-photo";
-@import "components/button";
-@import "components/navigation";
+@use "components/work-photo";
+@use "components/sns";
+@use "components/grey-box";
+@use "components/works-slider";
+@use "components/business-photo";
+@use "components/button";
+@use "components/navigation";
 
-@import "layout/header";
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/copy-right";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/grid";
+@use "layout/copy-right";
 
-@import "pages/top";
-@import "pages/pages";
+@use "pages/top";
+@use "pages/pages";

@@ -1,6 +1,8 @@
+@use "../abstracts/variables";
+
 .copy-right {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: variables.$color-black;
+  color: variables.$color-white;
   font-size: 0.5rem;
   padding: 1rem 0;
 }

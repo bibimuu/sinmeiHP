@@ -1,11 +1,14 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .grey-box {
   width: 15%;
-  background-color: $color-grey;
+  background-color: variables.$color-grey;
   margin: 0 5rem 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     width: 20%;
   }
 }
