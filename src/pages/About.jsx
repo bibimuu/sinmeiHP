@@ -14,10 +14,10 @@ function About() {
         <GreyBox title="Email">sinmei.kougyou@gmail.com</GreyBox>
         <GreyBox title="創業">個人事業 1997年　法人 2016年</GreyBox>
         <GreyBox title="社員数">
-          技術職5名、ベトナム実習生2名、事務員1名、協力会社約10社
+          技術職2名、ベトナム実習生2名、事務員1名
         </GreyBox>
         <GreyBox title="対応地域">
-          福井県を中心に活動するデッキ屋（建設会社）です。北陸、東海地方、またお客様のご依頼があれば全国どこへでも行かせていただきます。
+          主に福井県内ですが、隣県や東海地方の仕事も多いです。
         </GreyBox>
       </section>
       <section className="about">
